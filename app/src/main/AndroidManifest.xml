@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-
+ xmlns:tools="http://schemas.android.com/tools">
     <uses-feature android:name="android.hardware.usb.host" android:required="true"/>
 
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -11,7 +11,7 @@
         android:label="BikeHUD Cam"
         android:supportsRtl="true"
         android:theme="@style/Theme.BikeHud">
-
+        tools:replace="android:label"
         <activity
             android:name=".CalibrateActivity"
             android:exported="false"/>
